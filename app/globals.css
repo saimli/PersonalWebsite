@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0F172A;
+  --foreground: #ffffff;
+  --gradient-1: hsla(215, 98%, 61%, 0.15);
+  --gradient-2: hsla(256, 98%, 72%, 0.15);
+  --gradient-3: hsla(354, 98%, 61%, 0.15);
+  --gradient-4: hsla(256, 96%, 67%, 0.15);
+  --gradient-5: hsla(38, 60%, 74%, 0.15);
+  --gradient-6: hsla(222, 67%, 73%, 0.15);
+  --gradient-7: hsla(343, 68%, 79%, 0.15);
+  
+  transition: 
+    --background 300ms ease-in-out,
+    --foreground 300ms ease-in-out,
+    --gradient-1 300ms ease-in-out,
+    --gradient-2 300ms ease-in-out,
+    --gradient-3 300ms ease-in-out,
+    --gradient-4 300ms ease-in-out,
+    --gradient-5 300ms ease-in-out,
+    --gradient-6 300ms ease-in-out,
+    --gradient-7 300ms ease-in-out;
+}
+
+.light-mode {
+  --background: #ffffff;
+  --foreground: #171717;
+  --gradient-1: hsla(215, 98%, 61%, 0.5);
+  --gradient-2: hsla(256, 98%, 72%, 0.5);
+  --gradient-3: hsla(354, 98%, 61%, 0.5);
+  --gradient-4: hsla(256, 96%, 67%, 0.5);
+  --gradient-5: hsla(38, 60%, 74%, 0.5);
+  --gradient-6: hsla(222, 67%, 73%, 0.5);
+  --gradient-7: hsla(343, 68%, 79%, 0.5);
+}
+
+body {
+  color: var(--foreground);
+  background-color: var(--background);
+  background-image: 
+    radial-gradient(at 27% 37%, var(--gradient-1) 0px, transparent 50%),
+    radial-gradient(at 97% 21%, var(--gradient-2) 0px, transparent 50%),
+    radial-gradient(at 52% 99%, var(--gradient-3) 0px, transparent 50%),
+    radial-gradient(at 10% 29%, var(--gradient-4) 0px, transparent 50%),
+    radial-gradient(at 97% 96%, var(--gradient-5) 0px, transparent 50%),
+    radial-gradient(at 33% 50%, var(--gradient-6) 0px, transparent 50%),
+    radial-gradient(at 79% 53%, var(--gradient-7) 0px, transparent 50%),
+    radial-gradient(at 15% 75%, var(--gradient-1) 0px, transparent 40%),
+    radial-gradient(at 85% 45%, var(--gradient-2) 0px, transparent 40%),
+    radial-gradient(at 45% 15%, var(--gradient-3) 0px, transparent 40%),
+    radial-gradient(at 65% 70%, var(--gradient-4) 0px, transparent 40%),
+    radial-gradient(at 5% 90%, var(--gradient-5) 0px, transparent 40%),
+    radial-gradient(at 90% 5%, var(--gradient-6) 0px, transparent 40%),
+    radial-gradient(at 20% 60%, var(--gradient-7) 0px, transparent 40%);
+  min-height: 100vh;
+  
+  transition: 
+    color 300ms ease-in-out,
+    background-color 300ms ease-in-out,
+    background-image 300ms ease-in-out;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
