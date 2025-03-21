@@ -33,7 +33,11 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
+# Have a global 'Window' type I need for my recaptcha
+#next-env.d.ts
 
 # mongodb
 .env.local
+
+# notes
+personal site notes.txt
