@@ -5,6 +5,8 @@
 :root {
   --background: #0F172A;
   --foreground: #ffffff;
+  --text-color-secondary: #9C9C9C;
+  --text-opacity: .3;
   --gradient-1: hsla(215, 98%, 61%, 0.15);
   --gradient-2: hsla(256, 98%, 72%, 0.15);
   --gradient-3: hsla(354, 98%, 61%, 0.15);
@@ -28,6 +30,8 @@
 .light-mode {
   --background: #ffffff;
   --foreground: #171717;
+  --text-color-secondary: #5c5c5c;
+  --text-opacity: .8;
   --gradient-1: hsla(215, 98%, 61%, 0.5);
   --gradient-2: hsla(256, 98%, 72%, 0.5);
   --gradient-3: hsla(354, 98%, 61%, 0.5);
@@ -72,3 +76,35 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.grecaptcha-badge {
+  visibility: hidden;
+} 
+
+
+
+@keyframes blink {
+
+  0%, 100% {
+
+    opacity: 0;
+
+  }
+
+  50% {
+
+    opacity: 1;
+
+  }
+
+}
+
+
+
+.loading-dots {
+
+  display: inline-block;
+
+  animation: blink 1.4s infinite both;
+
+} 

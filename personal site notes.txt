@@ -1,0 +1,15 @@
+DONE-for hamburger menu, add clicking outside of navbar minimizes navbar
+
+DONE-for hamburger menu, add name or something to middle of navbar so doesnt look so plain
+
+-On mobile/skinny screen, the Experience section looks dumb
+Fix this by vertically stacking the elements, can have responsive classes in tailwind
+
+
+-for form:
+add captcha
+add throlling
+add honeypot
+
+
+form loading button to look cooler maybe diff color when loading
