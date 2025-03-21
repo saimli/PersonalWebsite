@@ -2,6 +2,9 @@
 
 # dependencies
 /node_modules
+# Have a global 'Window' type I need for my recaptcha
+# Allow the specific globals.d.ts file
+!node_modules/@types/node/globals.d.ts
 /.pnp
 .pnp.js
 .yarn/install-state.gz
@@ -33,8 +36,7 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-# Have a global 'Window' type I need for my recaptcha
-#next-env.d.ts
+next-env.d.ts
 
 # mongodb
 .env.local
